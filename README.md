@@ -49,7 +49,7 @@ Projeto backend de um fórum desenvolvido em Spring Boot, com:
 ![Swagger endpoint](./images/jwtswagger.png)
 
 *Autenticação com Swagger*
-![Autenticação com swagger](./images/getalltopics.png)
+![Autenticação com swagger](./images/jwtswagger.png)
 ## 🛠️ Tecnologias
 
 - **Java 21** 
