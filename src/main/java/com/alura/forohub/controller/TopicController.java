@@ -3,9 +3,9 @@ package com.alura.forohub.controller;
 
 import com.alura.forohub.dtos.request.TopicRequestDTO;
 import com.alura.forohub.dtos.response.TopicResponseDTO;
-import com.alura.forohub.entities.Topic;
-import com.alura.forohub.repositories.TopicRepository;
 import com.alura.forohub.services.TopicServices;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,8 +13,9 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
 
+@Tag(name = "Topics crud operations")
+@SecurityRequirement(name = "bearerAuth")
 @RestController
 @RequestMapping("/topics")
 public class TopicController

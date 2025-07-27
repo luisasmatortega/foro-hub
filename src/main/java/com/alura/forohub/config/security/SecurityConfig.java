@@ -39,7 +39,13 @@ public class SecurityConfig
                 .cors(Customizer.withDefaults())
                 .authorizeHttpRequests(auth -> auth
 
-                        .requestMatchers("/auth").permitAll()
+                        .requestMatchers(
+                                "/auth",                          // your login endpoint
+                                "/v3/api-docs/**",                // OpenAPI JSON
+                                "/swagger-ui/**",                 // Swagger UI resources
+                                "/swagger-ui.html"              // Swagger main page
+
+                        ).permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session

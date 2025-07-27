@@ -28,10 +28,13 @@ Projeto backend de um fórum desenvolvido em Spring Boot, com:
 #### 🔐 Sistema de Autenticação
 - O projeto inclui **Spring Security + JWT** para gestão segura de utilizadores.
 
-### Endpoints de Autenticação
+#### Endpoints de Autenticação
 | Método | Rota   | Descrição                          |
 |--------|--------|-----------------------------------|
 | POST   | `/auth` | Autentica o utilizador e retorna JWT |
+
+#### 📊 Documentação com Swagger UI
+- O projeto inclui documentação automática via **Swagger** com suporte a autenticação JWT.
 
 ## 📸 Screenshots
 *Sistema de Autenticação*
@@ -40,8 +43,13 @@ Projeto backend de um fórum desenvolvido em Spring Boot, com:
 
 *Listagem de tópicos com paginação (Spring Pageable)*
 
-![Show authors](./images/getalltopics.png)
+![Listagem de tópicos](./images/getalltopics.png)
 
+*Documentação via **Swagger***
+![Swagger endpoint](./images/jwtswagger.png)
+
+*Autenticação em Swagger*
+![Autenticação em swagger](./images/getalltopics.png)
 ## 🛠️ Tecnologias
 
 - **Java 21** 
