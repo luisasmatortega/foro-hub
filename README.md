@@ -46,7 +46,7 @@ Projeto backend de um fórum desenvolvido em Spring Boot, com:
 ![Listagem de tópicos](./images/getalltopics.png)
 
 *Documentação via **Swagger***
-![Swagger endpoint](./images/jwtswagger.png)
+![Swagger endpoint](./images/swaggerendpoint.png)
 
 *Autenticação com Swagger*
 ![Autenticação com swagger](./images/jwtswagger.png)
